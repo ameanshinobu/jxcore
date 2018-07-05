@@ -364,7 +364,7 @@
               'DARWIN=1',
             ],
             'xcode_settings': {
-              'OTHER_CPLUSPLUSFLAGS': ['-std=c++11', '-stdlib=libstdc++',
+              'OTHER_CPLUSPLUSFLAGS': ['-std=c++11', '-stdlib=libc++',
                 '-Wno-mismatched-tags', '-Wno-missing-field-initializers',
                 '-Wno-unused-private-field', '-Wno-invalid-offsetof', '-Wno-ignored-qualifiers'
               ],
