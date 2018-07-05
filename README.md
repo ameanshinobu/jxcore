@@ -1,8 +1,8 @@
 ### JXcore with libc++ ###
 Original project from JXcore, and fork from Thaliproject.
-JXcore
+- JXcore : 
 https://github.com/jxcore/jxcore
-Thaliproject
+- Thaliproject : 
 https://github.com/thaliproject/jxcore
 
 ### How to build library with libc++ for iOS 12 ###
