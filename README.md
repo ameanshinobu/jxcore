@@ -1,3 +1,29 @@
+### JXcore with libc++ ###
+Original project from JXcore, and fork from Thaliproject.
+JXcore
+https://github.com/jxcore/jxcore
+Thaliproject
+https://github.com/thaliproject/jxcore
+
+### How to build library with libc++ for iOS 12 ###
+
+Go to root folder of jxcore project and:
+```bash
+$> export CXX="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -std=c++11 -stdlib=libc++"
+$> ./build_scripts/ios_compile.sh
+``` 
+The output binary will save in out_ios/ios/bin/
+
+### Xcode 10 project settings ###
+  - remove libstdc++.6.0.9 framework in project setting → General → Linked Frameworks and Libraries.
+  - add libc++.tbd framework
+  - make sure C++ Standard Library is using libc++
+  - clean the project and rebuild the project.
+
+### Test environment of JXcore compiled with libc++
+  - iOS 11
+  - iOS 12 Beta
+
 ### Evented I/O for (Chakra, SpiderMonkey, V8, and..) JavaScript
 
 JXcore extends Node.JS™ with additional features for developing mobile and 
